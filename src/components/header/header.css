@@ -30,10 +30,9 @@ header{
     background: var(--color-primary);
 }
 .my_image{
-    background: linear-gradient(
-    var(--color-primary), transparent);
-    width: 22rem;
-    Height:35rem;
+    background: #d6cae0;
+    width: 16rem;
+    Height:30rem;
     position: absolute;
     left: calc(50% - 11rem); /*this help to place the image to the middle of screen*/
     margin-top: 4rem;
