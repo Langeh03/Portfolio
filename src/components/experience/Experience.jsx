@@ -3,7 +3,11 @@ import './experience.css'
 
 export const Experience = () => {
   return (
-    <div></div>
+    <section id="experience">
+      <h5>What skills i have</h5>
+      <h2>My Experience</h2>
+      <div class="container experience__container"></div>
+    </section>
   )
 }
 

@@ -31,7 +31,7 @@ header{
 }
 .my_image{
     background: #d6cae0;
-    width: 16rem;
+    width: 22rem;
     Height:30rem;
     position: absolute;
     left: calc(50% - 11rem); /*this help to place the image to the middle of screen*/

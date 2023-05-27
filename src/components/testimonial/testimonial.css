@@ -1,0 +1,51 @@
+section .testimonials__container {
+  padding-bottom: 3rem;
+  width: 40%;
+  overflow: hidden;
+}
+section .testimonials__container .swiper-wrapper {
+  box-sizing: initial;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+}
+section .testimonials__container .swiper-wrapper .swiper-slide {
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+}
+section .testimonials__container .swiper-wrapper .testimonial {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: var(--color-bg-variant);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-right: 40px;
+}
+section .testimonials__container .swiper-wrapper .client__avatar {
+  aspect-ratio: 1/1;
+  width: 4rem;
+  border: 0.4rem solid var(--color-primary-variant);
+  border-radius: 50%;
+  margin: 0px auto 1rem;
+  overflow: hidden;
+}
+section .testimonials__container .swiper-wrapper .client__avatar img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+section .testimonials__container .swiper-wrapper .client__review {
+  color: var(--color-light);
+  font-weight: 300;
+  margin: 0.8rem auto 0px;
+}/*# sourceMappingURL=testimonial.css.map */

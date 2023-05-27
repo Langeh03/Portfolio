@@ -1,0 +1,85 @@
+section {
+    .about__container {
+        display: grid;
+        grid-template-columns: 35% 50%;
+        gap: 15%;
+
+        .about__me {
+            aspect-ratio: 1 / 1;
+            display: grid;
+            width: 100%;
+            background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+            border-radius: 2rem;
+
+            .about__me__image {
+                transform: rotate(10deg);
+                border-radius: 2rem;
+                overflow: hidden;
+                transition: var(--transition);
+
+                &:hover {
+                    transform: rotate(0deg);
+                }
+
+                img {
+                    display: block;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+        .about__me__content {
+            .about__cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+
+                .about__card {
+                    text-align: center;
+                    background: var(--color-bg-variant);
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: transparent;
+                    border-image: initial;
+                    padding: 2rem;
+                    transition: var(--transition);
+
+                    &:hover {
+                        cursor: default;
+                        background: transparent;
+                        border-color: var(--color-primary-variant);
+                    }
+
+                    .about__icon {
+                        color: var(--color-primary);
+                        font-size: 1.4rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .about__card h5 {
+                        font-size: 0.95rem;
+                    }
+
+                    .about__card small {
+                        color: var(--color-light);
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            p {
+                color: var(--color-light);
+                margin: 2rem 0px 2.6rem;
+            }
+
+            .btn-primary {
+                background: var(--color-primary);
+
+                &:hover {
+                    background: var(--color-white);
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
