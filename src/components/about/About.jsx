@@ -31,7 +31,7 @@ export const About = () => {
               <small>2 Completed</small>
             </article>
           </div>
-          <p>I am a young software engineer trained at the Faculty of Engineering of the University of Buea (FET). I get my B.eng in 2021. Being on demand for experience, I apply to Camsol.io which accepts me and gives me the chance to work on real business projects in order to gain experience. From July 2021 to today, I learned technologies such as react, react native, in short the MERN stack, I am still learning and counting on the support of Camsol to increase my knowledge at end of being an engineer not only graduate, but also qualified. I hold a French-speaking baccalaureate D sexion, my university studies at FET I did in English. I can therefore express myself in French and in English (average).</p>
+          <p>I am a young Frontend Developer being trained at the Faculty of Engineering of the University of Buea (FET). I am looking forward to getting my B.eng in 2025. Being on demand for experience, I applied to Camsol.io which accepted me and gave me the chance to work on real business projects in order to gain experience. From July 2021 to today, I learned technologies such as react, react native, in short the MERN stack and also have experience in version control systems such as github. I am still learning and counting on the support of Camsol to increase my knowledge at end of being an engineer and not just graduate. Being a Cameroonian a balingual speaking country I understand and speake both English and French.</p>
           <a href="#contact" class="btn btn-primary">Let's talk</a>
         </div>
       </div>

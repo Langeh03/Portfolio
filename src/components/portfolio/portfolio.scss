@@ -1,8 +1,20 @@
 section {
     .portfolio__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
+        .finished {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-bottom: 48px;
+        }
+
+        .coming__soon {
+            section {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2.5rem;
+                margin: 0;
+            }
+        }
 
         .portfolio__item {
             background: var(--color-bg-variant);

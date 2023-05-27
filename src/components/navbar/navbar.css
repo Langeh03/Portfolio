@@ -22,4 +22,11 @@ nav a {
   background: transparent;
   border-radius: 50%;
   padding: 0.9rem;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav .active {
+  color: var(--color-light);
+  background: var(--color-bg);
 }/*# sourceMappingURL=navbar.css.map */

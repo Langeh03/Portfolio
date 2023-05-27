@@ -1,7 +1,14 @@
-section .portfolio__container {
+section .portfolio__container .finished {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  margin-bottom: 48px;
+}
+section .portfolio__container .coming__soon section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin: 0;
 }
 section .portfolio__container .portfolio__item {
   background: var(--color-bg-variant);

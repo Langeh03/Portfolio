@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import {BsLinkedin} from 'react-icons/bs'
+import {FaLinkedinIn} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaFacebookF} from 'react-icons/fa'
 import {CgTwitter} from 'react-icons/cg'
@@ -19,7 +19,7 @@ export const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="footer__media">
-        <a href="https://linkedin.com" target="blank"><BsLinkedin/></a>
+        <a href="https://linkedin.com" target="blank"><FaLinkedinIn/></a>
         <a href="https://github.com" target="blank"><FaGithub/></a>
         <a href="https://facebook.com" target="blank"><FaFacebookF/></a>
         <a href="https://twitter.com" target="blank"><CgTwitter/></a>

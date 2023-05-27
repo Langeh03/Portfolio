@@ -11,6 +11,8 @@ section .testimonials__container .swiper-wrapper {
   transition-property: transform;
   width: 100%;
   z-index: 1;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
 }
 section .testimonials__container .swiper-wrapper .swiper-slide {
   flex-shrink: 0;
@@ -48,4 +50,64 @@ section .testimonials__container .swiper-wrapper .client__review {
   color: var(--color-light);
   font-weight: 300;
   margin: 0.8rem auto 0px;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -107.3%;
+  }
+  45% {
+    left: -107.3%;
+  }
+  50% {
+    left: -214.6%;
+  }
+  70% {
+    left: -214.6%;
+  }
+  75% {
+    left: -322%;
+  }
+  90% {
+    left: -322%;
+  }
+  100% {
+    left: -429%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -107.3%;
+  }
+  45% {
+    left: -107.3%;
+  }
+  50% {
+    left: -214.6%;
+  }
+  70% {
+    left: -214.6%;
+  }
+  75% {
+    left: -322%;
+  }
+  90% {
+    left: -322%;
+  }
+  100% {
+    left: -429%;
+  }
 }/*# sourceMappingURL=testimonial.css.map */
