@@ -6,6 +6,23 @@ import pic3 from '../../assets/3.jpg'
 import pic4 from '../../assets/4.jpg'
 
 export const Portfolio = () => {
+  const[data, setData] = useState([]);
+  useEffect(() => {
+    axios
+    .get("https://erin-tasty-donkey.cyclic.app/api/portfolio")
+      .then(response=> {
+        const formmatedData = res.data.data.map(item => ({
+          id:item._id,
+          image:item.image,
+          title:item.github,
+          demo:item.demo,
+        }))
+        console.log(`Here i am: ${formmatedData}`);
+        setData(formmatedData);
+      }).catch(error=> {
+        console.log("Error fteching the portfolio data", error)
+      });
+  },[])
   return (
     <section id="portfolio">
       <h5>My recent work</h5>

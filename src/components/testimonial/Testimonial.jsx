@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './testimonial.css'
 import testi1 from '../../assets/testi1.jpg'
 import testi2 from '../../assets/testi2.jpg'
 import testi3 from '../../assets/testi3.jpg'
 
 export const Testimonial = () => {
+  const[data, setData] = useState([]);
+  useEffect(() => {
+    axios
+    .get("https://erin-tasty-donkey.cyclic.app/api/testimonial")
+      .then(res=> {
+        const formmatedData = res.data.data.map(item => ({
+          id:item._id,
+          avatar:item.avatar,
+          name:item.name,
+          review:item.review,
+        }))
+        console.log(`Here i am: ${formmatedData}`);
+        setData(formmatedData);
+      })
+    .catch(error=> console.error(error));
+  },[])
   return (
     <section id="experience">
       <h5>Review from client</h5>
